@@ -8,10 +8,12 @@ const shoppingList = [
    'rum',
    'acqua',
 ];
-
+const shoppingListHTML = document.getElementById('shopping-list');
 let i = 0;
 while (i < shoppingList.length) {
-   console.log(i);
-   console.log(shoppingList[i]);
+   const shoppingItem = shoppingList[i];
+   const newLi = document.createElement('li');
+   shoppingListHTML.append(newLi);
+   newLi.innerHTML = shoppingItem;
    i++;
 }
