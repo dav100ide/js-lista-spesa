@@ -19,5 +19,6 @@ const addItemBtn = document.getElementById('added-item__btn');
 addItemBtn.addEventListener('click', function () {
    const addedItem = document.getElementById('added-item').value;
    shoppingListHTML.innerHTML += `<li>${addedItem}</li>`;
+   shoppingList.push(addedItem); // aggiungo anche nell'array
    console.log(shoppingList);
 });
