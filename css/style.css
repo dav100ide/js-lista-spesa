@@ -19,6 +19,9 @@ h1 {
    text-shadow: 1px 2px white;
 }
 
+ul {
+   margin-bottom: 2rem;
+}
 /* ========================
       commons 
 ============================*/
@@ -34,6 +37,13 @@ body {
    padding: 1.5rem;
 }
 
+.ms_flex-box {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 2rem;
+}
+
 /* shopping list */
 #shopping-list {
    text-transform: capitalize;
@@ -47,4 +57,25 @@ body {
 
 #shopping-list li:last-child {
    color: red;
+}
+
+/* bonus */
+#added-item {
+   font-size: 2rem;
+   padding: 0.5rem;
+   text-align: center;
+   border-radius: 5rem;
+}
+
+#added-item__btn {
+   font-size: 1.5rem;
+   padding: 0.5rem 2rem;
+   border-radius: 1.25rem;
+   border-color: red;
+}
+
+.app-container {
+   display: flex;
+   justify-content: space-between;
+   padding: 2rem 0;
 }
